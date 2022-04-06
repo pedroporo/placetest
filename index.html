@@ -14,7 +14,7 @@
 </head>
 	<body>
 		<div id="posel" noselect>(0,0) 2.5x</div>
-		<div id="place" noselect onclick="if(CD<Date.now())zoomIn(),showPalette();else audios.invalid.run()">Connecting...</div>
+		
 		<canvas id="canvas" width="0" height="0" noselect></canvas>
 		<div id="canvparent1" noselect>
 			<img id="edge" height="226" width="290" src="https://www.redditstatic.com/mona-lisa/assets/img/snoo-edge.png" />
@@ -304,7 +304,7 @@ if(location.search)onerror=alert
 				seti(boardI++, cell & 63)
 			}
 		}
-		let load = true
+		let load = false
 		fetch('place').then(a=>a.arrayBuffer()).then(a => {
 			board = new Uint8Array(a)
 			renderAll()
