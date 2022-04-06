@@ -1,0 +1,1 @@
+board=new Uint8Array([]);renderAll()
